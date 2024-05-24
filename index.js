@@ -40,3 +40,26 @@ function findMaxForLoop(nums) {
   }
   console.log(max);
 }
+
+/* More loops */
+
+function countVowels(targetString) {
+  // "Hello world!" -> 3
+
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+  // init; condition; step
+  for (let i = 0; i < targetString.length; i++) {
+    if (vowels.includes(targetString[i])) {
+      count++;
+    }
+  }
+
+  console.log(`Number of characters in ${targetString}: ${count}`);
+}
+
+function fizzbuzz() {
+  // Loop through 1-100. If the number is divisible by 3, print 'fizz'.
+  // If the number is divisible by 5, print 'buzz'. If it's divisible by
+  // both 3 and 5, print 'fizzbuzz'.
+}
